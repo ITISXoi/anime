@@ -1,0 +1,36 @@
+{
+  	"extends": [
+        "eslint:recommended",
+        "next"
+    ],
+    "ignorePatterns": ["src/translations/store/enum.ts"],
+  	"rules": {
+        // enable additional rules
+        "indent": "off",
+        // override configuration set by extending "eslint:recommended"
+        "no-empty": "warn",
+        "no-cond-assign": ["error", "always"],
+        "no-async-promise-executor": 0,
+        "no-useless-escape": 0,
+        "no-undef": 0,
+        // "no-unused-vars": 0,
+        // disable rules from base configurations
+         "for-direction": "off",
+
+         "no-mixed-spaces-and-tabs": 0,
+         "@typescript-eslint/no-this-alias": "off",
+         "@typescript-eslint/no-explicit-any": "off",
+         "no-unused-vars": [
+          "error",
+          {
+            "args": "all",
+            "argsIgnorePattern": "^_",
+            "caughtErrors": "all",
+            "caughtErrorsIgnorePattern": "^_",
+            "destructuredArrayIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ]
+    }
+}

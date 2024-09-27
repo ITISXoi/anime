@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #1a191f;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  color: #fff;
+}
+
+.header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a191f;
+  z-index: 101;
+  border-bottom: 1px solid #222028;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  gap: 20px;
+}
+
+.footer {
+  height: 80px;
+  background-color: #1a191f;
+  border-top: 1px solid #222028;
+  display: block;
+  width: 100%;
+  @media (max-width: 992px) {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.content {
+  height: 100%;
+  min-height: calc(100vh - 71px);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  display: block;
+  background-color: #1a191f;
+  overflow: hidden;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #222028;
+  border-radius: 50px ;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--Rounded, 100px);
+  background: var(--200, #f9ab00);
+}
+
+.background-auth {
+  background: url("../imgs/section__bg.jpg");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}

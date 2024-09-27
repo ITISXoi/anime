@@ -1,0 +1,74 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://anime-theta-two.vercel.app/#website",
+      "url": "https://anime-theta-two.vercel.app/",
+      "name": "AniSage",
+      "publisher": {
+        "@id": "https://pixitech.io/#organization"
+      },
+      "inLanguage": "en-US",
+      "image": "https://anime-theta-two.vercel.app/images/anisage-banner.jpg",
+      "logo": "https://anime-theta-two.vercel.app/images/anisage-fav.png",
+      "description": "Stream your favorite anime with AniSage, the ultimate destination for all things anime. Discover new shows, classics, and hidden gems—all in one place!"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Introducing the self-driving bicycle in the Netherlands",
+      "description": "Stream your favorite anime with AniSage, the ultimate destination for all things anime. Discover new shows, classics, and hidden gems—all in one place!",
+      "thumbnailUrl": [
+        "https://anime-theta-two.vercel.app/images/anisage-fav.png",
+        "https://anime-theta-two.vercel.app/photos/anisage-banner.jpg",
+        "https://anime-theta-two.vercel.app/photos/anisage-banner.jpg"
+      ],
+      "uploadDate": "2024-03-31T08:00:00+08:00",
+      "duration": "PT1M54S",
+      "contentUrl": "https://www.anisage.net/video/123/file.mp4",
+      "embedUrl": "https://www.anisage.net/embed/123",
+      "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": {
+          "@type": "WatchAction"
+        },
+        "userInteractionCount": 5647018
+      },
+      "regionsAllowed": [
+        "US",
+        "NL"
+      ]
+    },
+    {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "WebSite",
+        "image": "https://anime-theta-two.vercel.app/anisage-banner.jpg",
+        "name": "Legal Seafood",
+        "servesCuisine": "Anime",
+        "priceRange": "$$$",
+        "telephone": "1234567",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 William St",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10038",
+          "addressCountry": "US"
+        }
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 4
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Bob Smith"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Washington Times"
+      }
+    }
+  ]
+}

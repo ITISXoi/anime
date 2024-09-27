@@ -1,4 +1,4 @@
-const url = process.env.NEXT_PUBLIC_PRODUCT_URL;
+const url = "https://api.anisage.net/"
 
 export async function getDetailFilmForSEO(params: {
   identifier: string;
@@ -49,7 +49,7 @@ export async function getNewItemForSEO(param: {
 }): Promise<any> {
   try {
     const { data } = await fetch(
-      `https://api.anisage.net/films/get-all?page=${param.page}&&limit=${param.limit}`
+      `${url}films/get-all?page=${param.page}&&limit=${param.limit}`
     ).then((res) => res.json());
     return {
       props: {

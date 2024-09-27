@@ -49,7 +49,7 @@ export async function getNewItemForSEO(param: {
 }): Promise<any> {
   try {
     const { data } = await fetch(
-      `${url}films/get-all?page=${param.page}&&limit=${param.limit}`
+      `https://api.anisage.net/films/get-all?page=${param.page}&&limit=${param.limit}`
     ).then((res) => res.json());
     return {
       props: {
